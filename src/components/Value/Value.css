@@ -1,0 +1,152 @@
+ .img-container {
+    border: 8px solid rgb(232 232 232 / 93%);
+}
+
+
+.img-container {
+    width: 30rem;
+    height: 35rem;
+    border-radius: 15rem 15rem 0 0 ;
+    overflow: hidden;
+}
+.img-container > img {
+    width: 100%;
+    height: 100%;
+}
+.v-container > div {
+    flex: 1;
+}
+
+.v-right {
+    padding-top: 2rem;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.accordion-item{
+    /* gap: 1rem; */
+    background: white;
+    justify-content: space-around;
+    border: 2px solid red;
+}
+.accordion {
+    margin-top: 2rem;
+    border: none;
+}
+.accordionItem {
+    background: white;
+    border: .8px solid #eeeeff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.accordionButton {
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    padding : 10px;
+    background: #eeeeff;
+    color: blue;
+    border-radius: 5px;
+}
+.accordionButton  .primaryText {
+    font-size: 1.1rem;
+}
+.accordionItem.expanded{
+    box-shadow: var(--shadow);
+    border-radius : 3px;
+}
+
+@media screen and (max-width : 1050px){
+    .img-container{
+        width: 25rem;
+        height: 25rem;
+        margin: auto;
+    }
+    .img-container > img {
+        width: 100%;
+        height: 100%;
+    }
+    .v-right{
+        gap: 0rem;
+    }
+    .accordionButton >:nth-child(2) {
+        /* background-color: red; */
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 830px){
+    .v-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-right{
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        padding-left: 2.25rem;
+        padding-top: 0rem;
+    }
+    .img-container{
+        width: 25rem;
+        height: 25rem;
+        margin: auto;
+    }
+    .img-container > img {
+        width: 100%;
+        height: 100%;
+    }
+    .v-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+    .accordion{
+        width: 100%;
+        padding-right: 2rem;
+    }
+    .accordionButton >:nth-child(odd){
+        /* background-color: red; */
+        font-size: .8rem;
+        padding: 5px;
+    }
+    .accordionButton >:nth-child(2) {
+        /* background-color: red; */
+        font-size: .8rem;
+        
+    }
+}
+
+@media screen and (max-width : 475px){
+    .v-right > :nth-child(3){
+        /* background-color: red; */
+        
+    }
+    .img-container{
+        width: 20rem;
+        height: 20rem;
+        margin: auto;
+    }
+    .img-container > img {
+        width: 100%;
+        height: 100%;
+    }
+    .accordion{
+        width: 100%;
+        /* width: 17rem; */
+    }
+    .accordionButton >:nth-child(2) {
+        /* background-color: red; */
+        font-size: .6rem;
+        
+    }
+    .detail{
+        font-size: 0.6rem;
+        /* background-color: red; */
+    }
+}

@@ -1,0 +1,135 @@
+.hero-wrapper{
+    color: white;
+    position:relative;
+    padding-bottom: 2rem;
+    /* background: var(--black); */
+}
+
+.hero-container{
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+   }
+
+.hero-title{
+    /* font-weight: 100; */
+    position: relative;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    z-index: 1;
+}
+.hero-title > h1{
+    font-size:3.8rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.orange-circle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: var(--orange-gradient);
+    border-radius: 50%;
+    top: 5%;
+    right: 30%;
+    z-index: -1;
+}
+.hero-des{
+    padding: 2rem 0;
+}
+.search-bar{
+    width: 100%;
+    background: white;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 3px solid rgba(134 ,134 ,134 , 0.347);
+}
+.search-bar > input{
+    border: none;
+    outline: none;
+}
+.stats{
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.stat>:nth-child(1){
+    font-size: 2rem;
+}
+.stat>:nth-child(1)>:last-child{
+    color: orange;
+}
+.hero-right{
+    width: 35rem ;
+    height: 35rem;
+}
+
+.hero-right img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 50% 0 0 ;
+    border: 7px solid rgba(255, 255, 255, 0.12);
+}
+@media screen and (max-width : 1050px){
+    .hero-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    };
+}
+
+@media screen and (max-width: 640px){
+    .hero-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-container{
+        margin-top: 2rem;
+        padding-bottom: 0;
+    }
+    .hero-title >h1{
+        font-size:2.5rem ;
+        line-height: 3rem;
+    }
+    .hero-right{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0;
+        width : 25rem;
+        height: 25rem;
+    }
+    .hero-right > img {
+        width: 100%;
+        height: 100%;
+    }
+    .stats{
+        justify-content: center;
+        gap: .5rem;
+    }
+    .stat>:nth-child(1){
+        font-size: 1.8rem;
+    }
+    .search-bar{
+        justify-content: space-between;
+        gap: .2rem;
+    }
+    .search-bar > button {
+        font-size: .5rem;
+        padding: .5rem ;
+    }
+}
+
+@media screen and (max-width : 380px){
+    .hero-right{
+    
+        width: 20rem;
+        height: 20rem;
+    }
+    .hero-right > img {
+        width: 100%;
+        height: 100%;
+    }
+}
